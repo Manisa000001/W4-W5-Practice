@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
- 
-// Scaffold, Text
+
 void main() {
   runApp(
     const MaterialApp(

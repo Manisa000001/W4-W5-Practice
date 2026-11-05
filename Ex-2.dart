@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
- 
-//Container, Insets, BoxDecoration
+
 void main() {
   runApp(
     MaterialApp(
@@ -28,4 +27,3 @@ void main() {
     ),
   );
 }
- 

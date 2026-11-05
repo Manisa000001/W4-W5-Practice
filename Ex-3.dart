@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
- 
-//  Column
+
 void main() {
   runApp(
     MaterialApp(
@@ -10,20 +9,21 @@ void main() {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            _item('OOP', Colors.blue[100]!),
-            _item('DART', Colors.blue[300]!),
-            _item('FLUTTER', Colors.blue[600]!),
+            item('OOP', Colors.blue[100]!),
+            item('DART', Colors.blue[300]!),
+            item('FLUTTER', Colors.blue[600]!),
           ],
         ),
       ),
     ),
   );
 }
- 
-Widget _item(String label, Color color) {
+
+Widget item(String label, Color color) {
   return Container(
-    margin: const EdgeInsets.symmetric(vertical: 10), // 20px between items
-    padding: const EdgeInsets.symmetric(vertical: 8),
+    width: 320,
+    margin: const EdgeInsets.symmetric(vertical: 8),
+    padding: const EdgeInsets.symmetric(vertical: 12),
     decoration: BoxDecoration(
       color: color,
       borderRadius: BorderRadius.circular(25),
@@ -33,7 +33,7 @@ Widget _item(String label, Color color) {
         label,
         style: const TextStyle(
           color: Colors.white,
-          fontSize: 35,
+          fontSize: 34,
           fontWeight: FontWeight.w600,
         ),
       ),
